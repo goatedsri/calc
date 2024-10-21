@@ -11,14 +11,16 @@ numbers: list of numbers separated by spaces
 Example:
 >>> python3 calculator.py add 1 2 3 4
 
-or if using bash script:
+Example if using bash script:
 
 >>> ./run.sh add 1 2 3 4
-
 """
 
 def return_args():
-    if len(argv) < 4:
+    if len(argv) == 2 and argv[1] == 'help':
+        print(help_msg)
+        exit()
+    elif len(argv) < 4:
         print("Invalid input. Printing help message.")
         print(help_msg)
         exit()
