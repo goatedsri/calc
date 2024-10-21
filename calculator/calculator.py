@@ -6,7 +6,7 @@ import time
 help_msg = """
 Usage: python3 run.py [operation] [numbers]
 
-operations: add | subtract | multiply | help
+operations: help | add | subtract | multiply | divide
 numbers: list of numbers separated by spaces
 
 Example:
@@ -18,7 +18,7 @@ Example if using bash script:
 """
 
 def return_args():
-    if len(argv) == 2 and argv[1] == 'help':
+    if argv[1] == 'help':
         print(help_msg)
         exit()
     elif len(argv) < 4:
@@ -51,6 +51,9 @@ def main():
         elif operation == 'multiply':
             result = arithmetic.multiply(numbers)
             print("Result: ", result)
+        elif operation == 'divide':
+            result = arithmetic.divide(numbers)
+            print('Result: ', result)
         else:
             print("Invalid operation. Printing help message.")
             print(help_msg)

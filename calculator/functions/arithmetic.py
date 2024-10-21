@@ -16,3 +16,10 @@ def multiply(arguments):
     for argument in arguments:
         value = value * argument
     return value
+
+def divide(arguments):
+    value = arguments[0]
+    nums = arguments[1:]
+    for num in nums:
+        value = value / num
+    return value
