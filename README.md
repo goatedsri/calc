@@ -2,7 +2,7 @@
 
 a basic calculator project to practice coding in python
 
-currently only supports addition and subtraction.
+currently only supports some arithmetic.
 
 ## installation and usage
 
