@@ -32,7 +32,7 @@ cd goatedsri/calc
 chmod 777 ./run.sh
 ```
 
-### step 4: run the cli help command
+### step 4: run the cli `help` command
 > this command will give you an idea of how the calculator cli works
 
 ```shell
