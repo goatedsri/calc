@@ -1,7 +1,6 @@
 from functions import arithmetic
 import utils
 from sys import argv, exit
-import time
 
 help_msg = """
 Usage: python3 run.py [operation] [numbers]
@@ -64,6 +63,4 @@ def main():
         exit()
         
 if __name__ == '__main__':
-    start = time.time_ns()
     main()
-    print("Time taken: ", time.time_ns() - start, "ns")
